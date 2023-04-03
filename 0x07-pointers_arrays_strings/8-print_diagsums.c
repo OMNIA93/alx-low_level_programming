@@ -8,7 +8,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int l, f, c, g = 0, h = 0;
+	int l, f, c, l = 0, r = 0;
 
 	for (l = 0; l < size; l++)
 	{
@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 	for (f = 0; f < size; f++)
 	{
 		c = (f * size) + (size - 1 - f);
-		h += *(a + c);
+		r += *(a + c);
 	}
-	printf("%i, %i\n", g, h);
+	printf("%i, %i\n", l, r);
 }
